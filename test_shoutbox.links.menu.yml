@@ -1,0 +1,5 @@
+test_shoutbox.admin.contentlist:
+  title: Shoutboxes
+  description: 'Administrate shoutboxes'
+  route_name:  entity.shoutbox_entity.collection
+  parent: system.admin_content

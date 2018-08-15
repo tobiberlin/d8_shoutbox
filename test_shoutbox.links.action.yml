@@ -1,0 +1,5 @@
+test_shoutbox.shoutbox_add:
+  route_name: test_shoutbox.shoutbox_add
+  title: 'Add shoutbox'
+  appears_on:
+  - entity.shoutbox_entity.collection

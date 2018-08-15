@@ -1,0 +1,88 @@
+.shoutbox-answer {
+  margin-bottom:30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+
+.shoutbox-answer:last-child {
+  border: none;
+}
+
+.shoutbox-answer__meta {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.shoutbox-answer__answer {
+  margin: 20px;
+  position: relative;
+}
+
+.shoutbox-answers-list__form {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.shoutbox-answer-form {
+  text-align: left;
+  width: 95%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.js-accordion-panel {
+  padding: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 300ms, padding 300ms;
+  box-sizing: border-box;
+}
+
+/**
+Make the operations dropdown on shoutbox answer entity view behave like on the
+entities overviews
+ */
+.js-accordion-panel--open {
+  padding: 40px 0;
+  max-height: 800px;
+}
+
+.js-accordion-button:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 10px;
+}
+
+.js-accordion-button--active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.js .shoutbox-answer .dropbutton-widget {
+  position: absolute;
+}
+.js .shoutbox-answer .dropbutton-wrapper {
+  min-height: 2em;
+}
+.js .shoutbox-answer .dropbutton-multiple {
+  padding-right: 10em; /* LTR */
+  margin-right: 2em; /* LTR */
+  max-width: 100%;
+}
+
+.shoutbox-answers-list {
+  margin: 40px 0 20px;
+}
+
+.shoutbox-answer--unpublished {
+  background-color: azure;
+}
+
+.shoutbox-answer__unpublished {
+  font-size: .8em;
+  color: red;
+  margin-bottom: 5px;
+}

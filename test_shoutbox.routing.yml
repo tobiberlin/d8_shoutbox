@@ -1,0 +1,56 @@
+entity.shoutbox_entity.canonical:
+  path: '/shoutbox/{shoutbox_entity}'
+  defaults:
+    _entity_view: 'shoutbox_entity'
+    _title: 'Shoutbox'
+  requirements:
+    _entity_access: 'shoutbox_entity.view'
+
+entity.shoutbox_entity.collection:
+  path: '/shoutbox-list'
+  defaults:
+    _entity_list: 'shoutbox_entity'
+    _title: 'List of all shoutboxes'
+  requirements:
+    _permission: 'administer shoutbox'
+
+test_shoutbox.shoutbox_add:
+  path: '/shoutbox/add'
+  defaults:
+    _entity_form: shoutbox_entity.add
+    _title: 'Add new shoutbox'
+  requirements:
+    _entity_create_access: 'shoutbox_entity'
+
+entity.shoutbox_entity.edit_form:
+  path: '/shoutbox/{shoutbox_entity}/edit'
+  defaults:
+    _entity_form: shoutbox_entity.edit
+    _title_callback: '\Drupal\test_shoutbox\Form\ShoutboxForm::title'
+  requirements:
+    _entity_access: 'shoutbox_entity.update'
+
+entity.shoutbox_entity.delete_form:
+  path: '/shoutbox/{shoutbox_entity}/delete'
+  defaults:
+    _entity_form: shoutbox_entity.delete
+    _title: 'Delete shoutbox'
+  requirements:
+    _entity_access: 'shoutbox_entity.delete'
+
+
+entity.shoutbox_answer.edit_form:
+  path: '/shoutbox-answer/{shoutbox_answer}/edit'
+  defaults:
+    _entity_form: shoutbox_answer.edit
+    _title_callback: '\Drupal\test_shoutbox\Form\ShoutboxAnswerForm::title'
+  requirements:
+    _entity_access: 'shoutbox_answer.update'
+
+entity.shoutbox_answer.delete_form:
+  path: '/shoutbox-answer/{shoutbox_answer}/delete'
+  defaults:
+    _entity_form: shoutbox_answer.delete
+    _title: 'Delete shoutbox answer'
+  requirements:
+    _entity_access: 'shoutbox_answer.delete'

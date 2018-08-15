@@ -1,0 +1,15 @@
+<article {{ attributes }}>
+  <div class="shoutbox-answer__meta">
+    {{ author }} {{ 'answered on'|trans }} {{ date|format_date('medium') }}
+
+  </div>
+  <div class="shoutbox-answer__answer">
+    {% if unpublished %}
+      <div class="shoutbox-answer__unpublished">{{  'Unpublished'|trans }}</div>
+    {% endif %}
+    {{ answer }}
+  </div>
+  {% if operations %}
+    {{ operations }}
+  {% endif %}
+</article>

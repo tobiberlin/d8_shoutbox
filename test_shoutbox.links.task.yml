@@ -1,0 +1,22 @@
+entity.shoutbox_entity.canonical:
+  route_name: entity.shoutbox_entity.canonical
+  base_route: entity.shoutbox_entity.canonical
+  title: 'View'
+
+entity.shoutbox_entity.edit_form:
+  route_name: entity.shoutbox_entity.edit_form
+  base_route: entity.shoutbox_entity.canonical
+  title: 'Edit'
+
+entity.shoutbox_entity.answers_moderation:
+  # deriver:  'Drupal\test_shoutbox\Plugin\Derivative\AnswersLocalTasks'
+  route_name:  view.answers_to_shoutbox.page_2
+  base_route:  entity.shoutbox_entity.canonical
+  title: 'Answers moderation'
+  weight: 10
+
+entity.shoutbox_entity.delete_form:
+  route_name:  entity.shoutbox_entity.delete_form
+  base_route:  entity.shoutbox_entity.canonical
+  title: 'Delete'
+  weight: 20

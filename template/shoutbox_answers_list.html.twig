@@ -1,0 +1,25 @@
+<section {{ attributes }}class="shoutbox-answers-list">
+  {%  if heading %}
+  <h1>{{ heading }}</h1>
+  {% endif %}
+
+  {% if intro_text %}
+    <div class="shoutbox-answers-list__introtext">
+      {{ intro_text }}
+    </div>
+  {% endif %}
+
+
+  {% if answers_form %}
+    <div class="shoutbox-answers-list__form">
+      <button class="js-accordion-button">{{ 'Send us your answer'|trans }}</button>
+      {{ answers_form }}
+    </div>
+  {% endif %}
+
+  {% if answers_list %}
+    <div class="shoutbox-answers-list__answerslist">
+      {{ answers_list }}
+    </div>
+  {% endif %}
+</section>

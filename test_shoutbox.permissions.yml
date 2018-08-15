@@ -1,0 +1,6 @@
+view shoutbox entity:
+  title: 'View published shoutboxes'
+add answer to shoutbox:
+  title: 'Add answer to shoutbox'
+administer shoutbox:
+  title: 'Administer shoutbox and answers'

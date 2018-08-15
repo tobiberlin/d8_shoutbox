@@ -1,0 +1,6 @@
+shoutbox:
+  css:
+    theme:
+      css/shoutbox-theme.css: {}
+  js:
+    js/shoutbox.js: {}

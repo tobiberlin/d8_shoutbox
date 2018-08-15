@@ -1,0 +1,9 @@
+name: Test Shoutbox
+description: Just an idea of a shoutbox in Drupal 8
+package: Shoutbox
+
+type: module
+core: 8.x
+
+dependencies:
+  - views
