@@ -274,6 +274,6 @@ class ShoutboxAnswer extends ContentEntityBase implements EntityPublishedInterfa
    * The cache tag: shoutbox_X_answerlist where X is the id of the shoutbox
    */
   public function getCacheTagAnswerList() {
-    return Shoutbox::getCacheTagAnswerList($this->get('shoutbox')->getEntity()->id());
+    return Shoutbox::getCacheTagAnswerList($this->getShoutbox()->id());
   }
 }
